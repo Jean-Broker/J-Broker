@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #e3a23c;
+    --primary-hover: #c98a2c;
+    --bg-dark: #0a0908;
+    --card-dark: #131215;
+    --border-dark: #262422;
+    --text-gold: #e3a23c;
+    --text-emerald: #22c55e;
+  }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #0b0a09;
+    color: #f5f1ea;
+    overflow-x: hidden;
+  }
+
+  /* Numeric font */
+  .font-mono-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .font-display {
+    font-family: 'Bodoni Moda', serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0c0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a251e;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e3a23c;
+}
+
+/* Luxury Range Slider Styling */
+input[type="range"].slider-amber {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #262422;
+  height: 6px;
+  border-radius: 9999px;
+  outline: none;
+}
+input[type="range"].slider-amber::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e3a23c;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(227, 162, 60, 0.7);
+  transition: transform 0.15s ease;
+}
+input[type="range"].slider-amber::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type="range"].slider-emerald {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #262422;
+  height: 6px;
+  border-radius: 9999px;
+  outline: none;
+}
+input[type="range"].slider-emerald::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #22c55e;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.7);
+  transition: transform 0.15s ease;
+}
+input[type="range"].slider-emerald::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}

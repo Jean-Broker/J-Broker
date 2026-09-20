@@ -1,0 +1,6 @@
+{
+  "name": "J Broker Assistant",
+  "description": "Luxury real estate platform for brokers & buyers featuring smart installment calculator, down payment search, and developer payment plans.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
